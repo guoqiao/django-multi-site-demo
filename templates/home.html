@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+{% load webdesign %}
+{% load staticfiles %}
+{% load switch_extra %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{site.name}}</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body class="{{site.name}}">
+    <h1>Welcome to {{site.name}}</h1>
+    <h3>{% site_meta "full_name" %}</h3>
+
+    {% if user.id %}
+    hi, you're logged in as {{user.username}}, <a href="/admin/logout/">Logout</a>
+    {% else %}
+    <a href="/admin/login/">Login</a>
+    {% endif %}
+
+    {% lorem 2 p %}
+
+</body>
+</html>

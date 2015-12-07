@@ -1,0 +1,20 @@
+[
+{
+    "fields": {
+        "value": "Progress and Consistency Tool",
+        "site": 1,
+        "key": "full_name"
+    },
+    "model": "switch.sitemeta",
+    "pk": 1
+},
+{
+    "fields": {
+        "value": "Te Waharoa Araran",
+        "site": 2,
+        "key": "full_name"
+    },
+    "model": "switch.sitemeta",
+    "pk": 2
+}
+]
